@@ -21,5 +21,5 @@ from django.urls import path, include, re_path
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^ht/', include('health_check.urls')),
-    re_path(r"^veichles/", include("veichle.urls")),  # esercizio di stile solo per usare una regex
+    re_path(r"^mission_control/", include("mission_control.urls")),  # esercizio di stile solo per usare una regex
 ]

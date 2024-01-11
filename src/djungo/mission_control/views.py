@@ -7,7 +7,7 @@ from django.views.generic import View
 
 # Create your views here.
 
-class VeichleView(View):
+class MissionControlView(View):
     def get(self, request, *args, **kwargs):
         res = HttpResponse(
             "ciao ciao ciao"
@@ -15,10 +15,3 @@ class VeichleView(View):
         res.status_code = http.HTTPStatus.OK
         return res
 
-    def options(self, request, *args, **kwargs):
-        res = HttpResponse(
-            headers={
-                "pietro": "pazzo"
-            }
-        )
-        return res

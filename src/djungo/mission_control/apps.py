@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class VeichleConfig(AppConfig):
+class MissionControlConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'veichle'
+    name = 'mission_control'

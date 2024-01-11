@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'health_check',
     'health_check.db',
+    'mission_control.apps.MissionControlConfig'
 ]
 
 MIDDLEWARE = [
