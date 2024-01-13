@@ -24,9 +24,10 @@ class Vehicle(models.Model):
 
 
 class Crew(models.Model):
-    service_veichle = models.ForeignKey(Vehicle, on_delete=models.CASCADE, null=True)
+    # service_veichle = models.ForeignKey(Vehicle, on_delete=models.CASCADE, null=True)
     issued = models.DateField()
     foreman = models.IntegerField()
+    service_vehicle = models.CharField(default="blank")
 
 
 class CrewMate(models.Model):
